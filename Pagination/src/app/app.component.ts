@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   currentPage = 0;
+
   images = [
     {
       title: 'At the Beach',
@@ -186,7 +187,7 @@ export class AppComponent {
     }
   ];
 
-  checkWindowIndex(index: number) {
+  checkWindowIndex(index: number): boolean {
     return Math.abs(this.currentPage - index) < 5;
   }
 }
